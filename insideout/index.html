@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Inside Out</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<meta name="apple-mobile-web-app-title" content=" ">
+		<!--ios調整-->
+		<meta name="apple-mobile-web-app-capable" content="yes"><!--使網頁全屏幕-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"> <!--與螢幕最上方顏色相同-->
+		<!--解決電話與地址預設亂黑影開槍-->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/scroll_speed.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
+		<video width="320" height="240" autoplay loop   preload id="rain" data-scroll-speed="8">
+			<source src="sea.mp4" type="video/mp4">
+		</video>
+		<svg height="0" width="0" class="rain_clipped">
+			<defs>
+			<clipPath id="frame">
+			<polygon points="120 100,220 0,320 100,220 200,220 200">
+			</polygon>
+			</clipPath>
+			</defs>
+		</svg>
+		<main class="header">
+			<nav>
+				<ul>
+					<li><a href="#findingworry_top">Finding Worry</a></li>
+					<li><a href="#makeyourgame">Make Your Game</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#research_top">Research Book</a></li>
+				</ul>
+			</nav>
+			<img src="images/Logo.svg" id="logo" data-scroll-speed="4">
+			<a href="#findingworry_top" class="scroll"><i class="material-icons">arrow_downward</i></a>
+			<div class="animate_icons">
+				<div>
+					<video width="450" height="240" autoplay  preload loop id="forest"  data-scroll-speed="7">
+						<source src="MilkyWay.mp4" type="video/mp4">
+					</video>
+					<svg height="0" width="0">
+						<defs>
+						<clipPath id="circle">
+						<circle id='top' cx="50" cy="50" r="50">
+						</clipPath>
+						</defs>
+					</svg>
+					
+					
+					<img src="images/cylinder.svg" id="cylinder1_1">
+					<img src="images/cylinder.svg" id="cylinder1_2">
+					<img src="images/cylinder.svg" id="cylinder1_3">
+					<img src="images/cylinder2.svg" id="cylinder2_1">
+					<img src="images/cylinder2.svg" id="cylinder2_2">
+					<img src="images/cylinder2.svg" id="cylinder2_3">
+					<img src="images/Polygon.svg" id="polygon" data-scroll-speed="8">
+					<img src="images/Rectangle2.svg" id="rectangle">
+					<svg id="circle_red" data-scroll-speed="2">
+						<circle cx="50" cy="50" r="50" fill="#cf505bde"/>
+					</svg>
+					<svg id="circle_blue" data-scroll-speed="3">
+						<circle cx="50" cy="50" r="50" fill="#3d61a8de"/>
+					</svg>
+					<!--img src="images/twocircle.svg" id="twocircle"-->
+				</div>
+			</div>
+		</main>
+		<span id="findingworry_top"></span>
+		<main class="content" id="findingworry">
+			<img src="images/cards.jpg">
+			<section data-scroll-speed="15">
+				<h1>Finding Worry</h1>
+				<p>Finding Worry is an easy step-by-step card game aimed to create a relaxing atmosphere of conversation abuot low mood. The game includes three types of images ,nature, everyday objects and abstract shapes, and one topic dice which is aimed to be a trigger for people to think of.</p>
+			</section>
+		</main>
+		<main class="content" id="makeyourgame">
+			
+			<h1>Make Your Finding Worry
+			<img src="images/cylinder.svg" id="cylinder1_4" data-scroll-speed="8">
+			<img src="images/cylinder.svg" id="cylinder1_5" data-scroll-speed="9">
+			<img src="images/redround.svg" id="redround2" data-scroll-speed="7">
+			<img src="images/Polygon.svg" id="polygon3" data-scroll-speed="8">
+			</h1>
+			<section>
+				<div class="instruction">
+					<dt>Instruction</dt>
+					<dd>
+					<b>Step 1</b>
+					<p>Choose the role. One Listener, One Teller</p>
+					<i class="material-icons">arrow_downward</i>
+					</dd>
+					<dd>
+					<b>Step 2</b>
+					<p>Teller pickes four cards and use them to describe one daily worry. </p>
+					<i class="material-icons">arrow_downward</i>
+					</dd>
+					<dd>
+					<b>Step 3</b>
+					<p>Listener pickes four cards and use them to give a tip to Listener.</p>
+					</dd>
+				</div>
+				<div class="elements">
+					<dt>Elements</dt>
+					<dd>
+					<ul>
+						<li>
+							<img src="images/card4.png">
+							<b>Topic Dice </b>
+							<p>Use a cube-shaped object, an eraser or paper folded. Then, write down six topics on each side.</p>
+						</li>
+						<li>
+							<img src="images/card.png">
+							<b>Abstract Shape x 8</b>
+							<p>Draw the simple shapes on papers. They can be circle, square, or shapes combined with simple shapes.</p>
+						</li>
+						<li>
+							<img src="images/card3.png">
+							<b>Everyday Object x 8</b>
+							<p>As this is Everyday Object, you can use the objects already around you or find their images from magazines, leaflets or flyers.</p>
+						</li>
+						<li>
+							<img src="images/card2.png">
+							<b>Nature x 10</b>
+							<p>Find out magazines, leaflets or flyers with nature pictures on it and cut down them.</p>
+						</li>
+					</ul>
+					</dd>
+				</div>
+			</section>
+		</main>
+		
+		
+		<main class="content" id="about">
+			<h1>About
+			<img src="images/cylinder2.svg" id="cylinder2_4" data-scroll-speed="6">
+			<img src="images/cylinder2.svg" id="cylinder2_5" data-scroll-speed="5">
+			<img src="images/Polygon.svg" id="polygon2" data-scroll-speed="8">
+			</h1>
+			<section>
+				<div class="about_img_slide">
+					<img src="images/park.jpg">
+				</div>
+				<div class="about_text">
+					
+					<p>The project is aimed to intervent the accumlated low mood and encourage people to talk about the negative emotions.</p>
+					<p>Talking plays a vital role for asking for help. However, it is not easy for some people. Thus, we amplified the good part of talking therapy and implanted it to the daily life. The outcome is a card game aimed to create a relaxing atmosphere and visualise invisible emotions.</p>
+				</div>
+			</section>
+			
+		</main>
+		<main class="gap" id="research_top">
+			<span id="bluediamond"></span>
+		</main>
+		
+		<main class="content" id="researchbook">
+			
+			<h1>Research Book</h1>
+			<p>In the whole research process, we did the research about various therapies and environmental study. Further, we interviewed the people who have experienced the talking therapy for a long time and a talking therapist in London. After prototyping the card game, we experimented the game in different places from someone’s home to mental clinic with different users from children to adults. </p>
+			<div data-configid="3480962/63298759" style="width:100%; height:500px;" class="issuuembed"></div>
+			<script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+		</main>
+	<footer>Copyright © Man Ping Chen 2018</footer>
+</body>
+</html>

@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+*{ padding: 0; margin: 0; border: 0; box-sizing: border-box; text-decoration: none; list-style: none; font-family: sans-serif;  }
+html,body{ min-height: 100vh; }
+body{ position: relative; }
+
+a{color: #0F0508; }
+h1{ font-family: 'Philosopher', sans-serif;font-size: 36px; text-align: center; letter-spacing: 0.1em; line-height: 1em; padding: 10px 0 30px; font-weight: 400;}
+h2{ font-family: 'Philosopher', sans-serif; font-size: 28px; text-align: center; letter-spacing: 0.1em; line-height: 1em; padding: 60px 0 50px; font-weight: 400;}
+h3{ font-size: 18px; text-align: left; letter-spacing: 0.08em; line-height: 1em; font-weight: 400;}
+h4{ font-size: 18px;  letter-spacing: 0.08em; line-height: 1em; padding: 20px 0 ; font-weight: 400;}
+h5{ font-size: 16px;  letter-spacing: 0.08em; line-height: 1.5em; padding: 20px 0 ; font-weight: 400;}
+h6{ font-size: 16px; text-align: center; letter-spacing: 0.08em; line-height: 1.5em; padding: 20px 0 ; font-weight: 400;}
+p{font-size: 16px; font-weight: 400; letter-spacing: 0.03em; line-height: 1.8em; /*text-align: justify; text-align-last: left;*/ }
+::selection{ background: #f3cd00;  color: #fff;}
+.mobile{ display: none}
+.clear{ clear: both; }
+
+header.pc{ width: 100vw; height: 80px; position: fixed; top: 0;  transition: 0.25s background; z-index: 9999; }
+a#main_logo{font-family: 'Philosopher', sans-serif; font-size: 50px; left: 10%; top: 20%; line-height: 80px;  position: absolute; width: auto;  display: block;  }
+a#mobile_main_logo{ display: none; }
+.anim-typewriter{ animation: typewriter 4s steps(44) 1s 1 normal both,  blinkTextCursor 500ms steps(44) infinite normal;}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 31em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+nav{ position: absolute; right: 60px; top: 30px;  }
+header.pc nav ul li{ transition: .5s all;display: block; float: left; background: #000; margin-left: 10px; padding: 10px;}
+header.pc nav ul li a{ display: block; color: #fff  }
+header.pc nav ul.menu{ float: left; }
+header.pc nav ul.menu li{transform: rotateX(0deg);}
+header.pc nav ul.menu li.mail a{ text-align: center; width: 180px;  }
+header.pc nav ul.menu li a{ font-family: 'Philosopher', sans-serif;font-size: 14px; letter-spacing: 0.044em; line-height: 30px; padding: 0 5px; color: #fff; }
+header.pc nav ul.menu li:hover{ background: #f3cd00 }
+#main_film{  position: relative; height: 75vh; transition: 1s opacity; }
+#main_film .line-1{  line-height: 32px; display: block; font-size:16px; width: 525px; top: 34vh; position: absolute;  left: 10%;  border-right: 2px solid rgba(255,255,255,.75); }
+#main_film .line-1 a{ position: relative; display: inline-block; }
+#main_film .line-1 a:after{ content: ""; transition: 0.3s all; display: block; position: absolute; top: 30px; width: 100%; border-bottom: 1px solid #f3cd00}
+#main_film .line-1 a:hover:after{ top: 20px; border-width: 4px; z-index: -1  }
+.show{ opacity: 1 }
+.hide{ opacity: 0}
+main{ position: relative; border-top: 1px solid #ddd; padding-bottom: 60px;  }
+
+
+/*HOME ABOUT*/
+.home_about{ z-index: 2; position: relative;  width: 100%;   }
+.home_about .career_detail{ padding: 5% }
+.home_about_text{ padding: 0 5%; width: 50%; margin-bottom: -10%}
+.home_about dt{ z-index: 1000; font-family: 'Philosopher', sans-serif; font-size: 32px; letter-spacing: 0.1em; line-height: 1em; font-weight: 400;}
+.home_about dd{ padding:30px 0 10px; line-height: 1.8em; font-size: 14px; }
+#home_service{ float: left; position: relative;transition: .5s all;    }
+#home_service>div{ }
+#home_service>div,#home_service dt{  /*background-color: #103256;  color: #fde050; */}
+#home_website{ float: right; position: relative; transition: .5s all;  }
+#home_website>div{ }
+#home_website>div,#home_website dt{  /*background-color: #fde050;  color: #103256; */}
+.ability_bar{ font-size: 14px;line-height: 1.8em ;}
+.ability_bar li{font-family: 'Philosopher', sans-serif;}
+span.per90{width: 180px; display: inline-block; background:#000; /*background-color: #103256;*/ height: 6px; margin-right: 10px; animation: abilitybar90 1s 0s 1}
+span.per60{width: 120px; display: inline-block;  background:#000; /*background-color: #103256;*/ height: 6px; margin-right: 10px;animation: abilitybar60 1s 0s 1}
+span.per30{width: 60px; display: inline-block;   background:#000; /*background-color: #103256;*/ height: 6px; margin-right: 10px;animation: abilitybar30 1s 0s 1; }
+span.star{ margin-right: 10px; }
+#home_service .design_info{  z-index: 4; position: relative;  }
+#home_website .design_info{ z-index: 4; position: relative; }
+.more_info{ height: 30vh; width: 100%;  border-bottom: 1px solid #ddd; clear: both; }
+.more_info a{ border-left: 1px solid #ddd;  padding: 5%;font-family: 'Philosopher', sans-serif; font-size: 30px; display: flex;  align-items: center; justify-content: center;text-align: right; right: 0; position: absolute; height: 30vh; width: calc( 100% / 3 * 2);  }
+.design_info{ float: left; width: calc( 100% / 3); position: sticky; top: 0  }
+.work_info img{ width: 100%;  display: block; transition: 1s all; position: relative; z-index: 2 }
+.work_info video{ width: 100%;  display: block; transition: 1s all; position: relative; z-index: 2 }
+.work_info .work{ height: 100%; text-align: center;  display: flex; flex-wrap: wrap; }
+.work_info .work li{ width: 50%; position: relative;flex-direction: column;  transition: .3s all; margin: 15vh 0; display: flex;  align-items: center; justify-content: top; }
+.work_info .work li a{ width: 100%; position: relative;flex-direction: column;  transition: .3s all;  display: flex;  align-items: center; justify-content: center; }
+.work_info .work p{width: 100%; padding: 5%;}
+.work_info .work span{ display: block; text-align: left; font-size: 12px; line-height: 1.6em}
+.work_info .work span.title{ font-weight: bolder; font-size: 18px; }
+.work_info{ border-left:1px solid #ddd; float: right; width: calc( 100% / 3 *2);}
+.testimony{ padding: 10%; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;  }
+.testimony p.name{ display: inline-block; padding-right: 10px; font-size: 13px;  }
+.testimony>div{  display: flex;  align-items: center; justify-content: center;  }
+.testimony>div div{ padding: 5% }
+.testimony>div div blockquote{ margin-bottom: 15px }
+.career_detail{ position: sticky !important;top: 0!important  }
+.work_info .work li:after{ content: "";  width: 100%; left: 0%; transition: .3s all; position: absolute; height: 5px; bottom: -10%;  z-index: 1; display: block;  background: #f3cd00;  }
+.work_info .work li:hover:after { bottom: 0 }
+.work_info .work li:hover { }
+.more_info a span{ position: relative; display: inline-block;font-family: 'Philosopher', sans-serif; }
+.more_info a span:after{ content: ""; transition: 0.3s all; display: block; position: absolute; top: 36px; width: 100%; border-bottom: 1px solid #f3cd00}
+.more_info a:hover span:after{ top: 24px; border-width: 4px; z-index: -1  }
+
+.design_info .list_back{ display: block;  font-family: 'Philosopher', sans-serif; line-height: 30px; height: 30px; margin-left: -7px; z-index: 999 }
+.design_info .list_back i{ display: block; float: left; padding: 3px; }
+
+
+@keyframes abilitybar90{
+  from{width: 0; opacity: 0}
+  to{width: 180px; opacity: 1}
+}
+@keyframes abilitybar60{
+  from{width: 0; opacity: 0}
+  to{width: 120px; opacity: 1}
+}
+@keyframes abilitybar30{
+  from{width: 0; opacity: 0}
+  to{width: 60px; opacity: 1}
+}
+
+
+.video-container {position: relative;padding-bottom: 56.25%;padding-top: 30px;height: 0;overflow: hidden;}
+
+.video-container iframe, .video-container object, .video-container embed {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+
+
+/*Footer*/
+footer{  z-index: 100;  width: 100%; position: absolute; bottom: 0;   clear: both; text-align: center; height: 60px; }
+footer p{ font-size: 12px;text-align: center; text-align-last: initial; line-height: 60px; color: #555 }
+
+.page footer{ border-top: 1px solid #ddd }
+.page main{ border-top: 0; }
+.page #main_film{border-bottom: 1px solid #ddd ; height: 55vh; padding: 10% }
+.page .work_info{ border-left: 0; width:100% }
+.page .design_info{ width: 100% }
+.page .design_info dt{ z-index: 1000; font-family: 'Philosopher', sans-serif; font-size: 32px; letter-spacing: 0.1em; line-height: 1em; font-weight: 400;}
+.page .design_info dd{ padding:30px 0; line-height: 1.8em; font-size: 14px; }
+.ability_detail{ position: absolute; width: 30%; top: 5vh;right: 0 }
+.ability_detail p{ font-size: 12px; }
+.page .work_info .work{ display: flex;  align-items: center; justify-content: left; flex-wrap: wrap;}
+.page .work_info .work li{ margin: 0 0 5vh;  flex-flow: row-reverse;  overflow: hidden; width: 25% }
+.page .work_info .work li:after{ left: 0; display: none;  }
+.page .work_info .work li a{ width: 100%; display: flex;  flex-flow: row-reverse; align-items: center; justify-content: center; }
+.page .work_info .work li a i{ display: flex; align-items: center; justify-content: center;  opacity: 0; position: absolute; width: 50px; top: calc( 50% - 25px);  z-index: 3; color:#000; background: #f3cd00d9; transition: .3s all; height: 50px; }
+.page .work_info .work li a img{ width: 100% }
+.page .work_info .work li a:hover i{  opacity: 1;}
+
+.work_page a#main_logo{ font-size: 14px; line-height: 26px; display: block; position: fixed; padding: 10px; color: #fff; background: #000; top: 30px; left: 50px; z-index:10000 }
+.work_page main{ border-top: 0; border-bottom:0; }
+.work_page .work_title{ display: flex;  align-items: center; justify-content: center; flex-direction: column; height: 30vh; border-bottom: 1px solid #ddd;   }
+.work_page .work_title h1{ padding-bottom: 0 }
+.work_page .work_wrap{ padding: 10vh 10% }
+.work_page .work_wrap img{ width: 100%; max-width: 800px; margin: 0 auto; display: block; }
+.work_page .work_wrap video{ width: 500px;margin: 0 auto; display: block; }
+.work_page .label{ display: flex;  align-items: center; justify-content: center;  }
+.work_page .label li{ font-size: 12px; display: inline-block; padding: 10px }
+.work_page h3{ font-family: 'Philosopher', sans-serif; line-height: 30px; text-align: center; margin-bottom: 40px; }
+.work_page .caption{ font-size: 13px; color: #000; text-align: left; width: 50%; margin: 50px auto }
+.work_page .caption b{ font-weight: bold; margin-bottom: 20px; display:block;}
+.work_page .caption i{ font-weight: 800; }
+.work_page .caption_list_title{ margin-bottom: 0 } 
+.work_page .caption_list{ font-size: 13px; color: #000; text-align: left; width: 50%; margin: 0px auto 50px }
+.work_page .caption_list li{ line-height: 1.8em; list-style: disc outside; text-align: left; margin-left: 20px; }
+.work_page .voice{ font-size: 13px; color: #000; text-align: center; width: 50%; margin: 50px auto; font-style: italic; }
+.work_page .list_back{ display: block; position: fixed; font-family: 'Philosopher', sans-serif; line-height: 30px; height: 30px; left: 50px;top: calc( 15% - 15px ); z-index: 999 }
+.work_page .list_back i{ display: block; float: left; padding: 3px; }
+.work_page .link{ text-align: center; display: block; text-decoration: underline; width: 180px; height: 30px; line-height: 21px; }
+.work_page .link i{ display: block; float: left; }
+.work_page footer{ border-top: 1px solid #ddd;  }
+
+/*RWD*/
+@media (min-width: 1680px){
+	#main_film{ height: 60vh; min-height: 586px; }
+	#main_film .line-1{ top: 28vh; }
+	
+}
+
+@media (max-width: 1679px) and (min-width: 1440px) {
+	#main_film{ height: 70vh; min-height: 500px; }
+	#main_film .line-1{top: 34vh;}
+}
+
+
+@media (max-width: 1024px) and (min-width: 769px) {
+	.work_page .caption,.work_page .caption_list,.work_page .voice{ width: 60% }
+	
+}
+
+
+@media (max-width: 768px){
+	
+	.page #main_film{ height: 420px;  transition: 1s opacity; padding: 16% 10% }
+	span.star{ display: block; }
+	.page .work_info .work li{ margin:0 0 20px }
+	span.per90, span.per60,span.per30{ display: inline-block; }
+	span.per90{ width: 90px }
+	span.per60{ width: 60px; }
+	span.per30{ width: 30px }
+	@keyframes abilitybar90{
+	  from{width: 0; opacity: 0}
+	  to{width: 90px; opacity: 1}
+	}
+	@keyframes abilitybar60{
+	  from{width: 0; opacity: 0}
+	  to{width: 60px; opacity: 1}
+	}
+	@keyframes abilitybar30{
+	  from{width: 0; opacity: 0}
+	  to{width: 30px; opacity: 1}
+	}
+	.work_info .work span{ line-height: 1.4em }
+	.work_page .caption,.work_page .caption_list,.work_page .voice{ width: 70% }
+}
+
+
+@media (max-width: 640px) {
+	nav{right: 40px; top: 20px}
+
+	#main_film{ height: 70vh; transition: 1s opacity; }
+	a#main_logo{ top: 23% }
+	#main_film .line-1{ font-size: 16px; line-height: 30px; top: 42%}
+	#home_service .design_info,#home_website .design_info{ padding:13% 10%; width: 100%; background: #fff; border-bottom: 1px solid #ddd }
+	span.star{ display: inline-block; }
+	.home_about .career_detail{ padding: 4% }
+	.home_about dt{ font-size: 27px; width: 250px; }
+	.home_about dd{ padding: 20px 0 0 }
+	.work_info{ width: 100%; border-left: 0; border-bottom: 1px solid #ddd }
+	.ability_bar{ font-size: 12px; line-height: 1.5em }
+	.ability_bar li{margin-bottom: 5px; width: 44%; display: inline-block; }
+	.work_info .work li{ margin: 4vh 0 }
+	.work_info .work span.title{ margin: 10px 0; line-height: 1.3em }
+	.more_info a{ width: 100%; border-left: 0 }
+	.testimony{padding: 10% 3%;}
+	.work_page a#main_logo{ top:20px; left: 40px; }
+	.work_page .list_back{ top: 80px; left: 40px; }
+	.work_page .ability_bar li{ display: block; }
+	.work_page .ability_detail{width: 50%}
+	.work_page .work_title{ padding-top: 50px; }
+	.page .work_info .work li{width: calc( 100% / 3);}
+	.page #main_film{ height: 50vh; padding-top: 26% }
+}
+
+@media (max-width: 600px) {
+
+	#main_film{ height: 75vh; transition: 1s opacity; }
+	#main_film .line-1{ font-size: 16px; line-height: 30px; top: 34vh; width: 78%}
+	.ability_bar li{ margin-bottom: 5px; }
+	
+}
+
+@media (max-width: 425px) {
+	.page:before{ content:''; position: fixed; bottom: 0; z-index: 99; background: linear-gradient(360deg,#fff,#ffffff00); height: 150px; width: 100% }
+	.work_page a#main_logo{ display: none; }
+	a#main_logo{ font-size: 40px; }
+	a#mobile_main_logo{ display: block;  font-size: 40px; line-height: 50px; padding: 0 10px; z-index: 100000; top: 20px; height: 50px; left: 30px; background: #000; color: #fff; position: fixed; }
+	nav{ right: 30px; }
+	#main_film{ height: 85vh; }
+	#main_film .line-1{ top: 34vh }
+	#home_service .design_info, #home_website .design_info{ position: relative !important; }
+	.home_about .career_detail{ width: 40%; padding:7%; }
+	.home_about dt{ font-size: 30px; width: 100% }
+	.ability_bar li{ display: block; width: 100% }
+	.work_info{ width: 100% }
+	.work_info .work li{ display: block; margin: 10vh 0; width: 100%; }
+	.work_info .work li a{ flex-direction: column; }
+	.work_info .work li:after{ left: 0; top: 0 }
+	.work_info .work li:hover:after{ width: 100%}
+	.work_info img{ width: 100% }
+	.work_info video{ width:100%}
+	.work_info .work p{ width: 90%; margin: 5%; padding-bottom: 10% }
+	span.per90, span.per60, span.per30{ display: inline-block;  }
+	.testimony{ border-top: 0 }
+	.testimony>div{ display: block; }
+	.testimony>div div{ padding: 5% 10% }
+	.testimony>div div blockquote{ font-size: 14px; }
+
+	.work_page a#main_logo{ text-indent: -9999px; }
+	.work_page .list_back{ top: 60px; left: 10px; height: 40px; overflow:hidden; }
+	.work_page .list_back i{ float: none; padding:7px; }
+	.page #main_film{ height: 500px;    padding: 160px 10%; }
+	.page .work_info .work li{ width: 100% }
+	.page .design_info dt{ font-size: 30px; }
+	.page .design_info dd{ position: relative; width: 100%;padding-bottom: 0; top: 0}
+	.page .design_info dd p{line-height: 1.5em}
+	.career_detail{ position: relative !important; }
+	.page .work_info .work li{ margin-bottom: 60px; }
+
+	.work_page .work_wrap video{ width: 100% }
+	.work_page .work_title{ padding: 50px 14% 0; height: 50vh }
+	.work_page .caption,.work_page .caption_list,.work_page .voice{ width: 80% }
+	.testimony p.name{ line-height: 1.3em }
+	.work_page .list_back{top: 80px;left: 30px; }
+
+
+}
+@media (max-width: 375px) {
+	h1{font-size: 26px;}
+	h4{ font-size: 16px; padding: 0; margin-bottom: 15px }
+	nav{ top: 10px; right: 10px }
+	header.pc nav ul li{ padding:5px; }
+	a#mobile_main_logo{ top: 10px; left: 10px; height: 40px; line-height:40px; padding: 0 7px; font-size: 34px; }
+	.page .design_info dd{ top: 0px; padding-bottom: 0}
+	.page #main_film{ height: 470px; padding: 130px 10% }
+	.page .design_info dt{ font-size: 28px; }
+	.work_page .list_back{top: 60px;left: 10px; }
+	.work_page .work_title{ height: 40vh }
+}
+@media (max-width: 320px) {
+	#main_film{ height: 89vh }
+	#main_film .line-1{line-height: 23px; font-size: 14px; top: 31vh}
+	a#main_logo{ font-size: 34px }
+	.home_about dt{ font-size: 19px; }
+	.home_about dd{ padding: 10px 0 }
+	.home_about .career_detail{ padding-top: 15vh }
+	.work_info img, .work_info video{ position: sticky; top: 0 }
+}
