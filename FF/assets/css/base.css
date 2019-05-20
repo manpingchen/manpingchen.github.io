@@ -1,0 +1,153 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, body {
+  color: #333;
+  font-size: 14px;
+  font-family: "YuGothic", '游ゴシック', "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", sans-serif;
+  line-height: 1;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  
+}
+
+body {
+  background: url("../img/common/scene_light.png") center center no-repeat ;
+  background-position: center !important;
+  background-size: cover
+}
+
+#wrap {
+  position: relative;
+  left: 50%;
+}
+
+#footer {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-size: 9px;
+  font-family: sans-serif;
+  padding: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  *zoom: 1;
+}
+#footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#footer > ul {
+  float: left;
+  overflow: hidden;
+  *zoom: 1;
+}
+#footer > ul li {
+  float: left;
+  margin-right: 10px;
+}
+#footer > ul li a {
+  color: #000;
+}
+#footer > p {
+  float: right;
+}
+
+#cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  opacity: 0.6;
+}
+
+#loading {
+  opacity: 0;
+  position: fixed;
+  top: 260px;
+  left: 50%;
+  width: 310px;
+  height: 210px;
+  margin-left: -155px;
+  z-index: 5000;
+}
+#loading p {
+  width: 310px;
+  height: 210px;
+}
+

@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>夏祭花火 璀璨京阪奈</title>
+    <!--ios調整-->
+    <meta name="apple-mobile-web-app-capable" content="yes"><!--使網頁全屏幕-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--解決電話與地址預設亂黑影開槍-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1">
+    <meta name="keywords" content="日本,京都,大阪,奈良,花火節,愛玩客">
+    <meta name="description" content="關西漫遊活 轉盤送好禮">
+    <meta property="og:title" content="夏祭花火 璀璨京阪奈">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="關西漫遊活 轉盤送好禮">
+    <meta property="og:site_name" content="夏祭花火 璀璨京阪奈">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/contents.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <script>
+    $('#menu_icon').click(function() {
+      $(this).toggleClass("active");
+      $(".menu").toggleClass("active")
+    });
+
+    $(document).ready(function(){
+      $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav',
+        responsive: [
+          {
+            breakpoint: 440,
+            settings:"unslick"
+            
+          }
+        ]
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        // centerMode: true,
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 440,
+            settings:"unslick"
+            
+          }
+        ]
+      });
+      
+    });
+    
+    </script>
+  </head>
+  <body class="mainpage">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!--Main-->
+    <header>
+      <img src="assets/img/article/h1.png" alt="">
+    </header>
+    <div class="main">
+      
+      <!--Menu-->
+      <div id="menu_icon"> <span class="AAA"></span> <span class="BBB"></span> <span class="CCC"></span> </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">夏祭花火</a></li>
+          <li><a href="article.html">京阪奈特刊</a></li>
+          <li><a href="video.html">影音花絮</a></li>
+          <li><a href="event.html">活動辦法</a></li>
+          <li class="share">
+            <a href="#"><img src="assets/img/fb.png" alt="facebook_share"></a>
+            <a href="#"><img src="assets/img/weibo.png" alt="weibo_share"></a>
+            <a href="#"><img src="assets/img/line.png" alt="line_share"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--content-->
+    <div class="content">
+      
+      <div class="article container">
+        <div id="show_container">
+          <div id="video_container">
+
+            <div class="slider slider-for" >
+              <div><iframe  src="https://www.youtube.com/embed/_VxLOj3TB5k" frameborder="0" allowfullscreen></iframe><p>京阪奈影音花絮</p></div>
+              <div><iframe  src="https://www.youtube.com/embed/_VxLOj3TB5k" frameborder="0" allowfullscreen></iframe><p>京阪奈影音花絮</p></div>
+              <div><iframe  src="https://www.youtube.com/embed/_VxLOj3TB5k" frameborder="0" allowfullscreen></iframe><p>京阪奈影音花絮</p></div>
+              <div><iframe  src="https://www.youtube.com/embed/_VxLOj3TB5k" frameborder="0" allowfullscreen></iframe><p>京阪奈影音花絮</p></div>
+              <div><iframe  src="https://www.youtube.com/embed/_VxLOj3TB5k" frameborder="0" allowfullscreen></iframe><p>京阪奈影音花絮</p></div>
+            </div>
+            <div class="slider slider-nav" >
+              <div><iframe  src="https://www.youtube.com/embed/_VxLOj3TB5k" frameborder="0" allowfullscreen></iframe><p>京阪奈影音花絮</p></div>  
+              <div><iframe  src="https://www.youtube.com/embed/_VxLOj3TB5k" frameborder="0" allowfullscreen></iframe><p>京阪奈影音花絮</p></div>
+              <div><iframe  src="https://www.youtube.com/embed/_VxLOj3TB5k" frameborder="0" allowfullscreen></iframe><p>京阪奈影音花絮</p></div>
+              <div><iframe  src="https://www.youtube.com/embed/_VxLOj3TB5k" frameborder="0" allowfullscreen></iframe><p>京阪奈影音花絮</p></div>
+              <div><iframe  src="https://www.youtube.com/embed/_VxLOj3TB5k" frameborder="0" allowfullscreen></iframe><p>京阪奈影音花絮</p></div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <a href=""><img src="assets/img/b300x600.png" alt=""></a>
+        <a href=""><img src="assets/img/b300x250.png" alt=""></a>
+        <a href=""><img src="assets/img/b300x100.png" alt=""></a>
+        <a href="index.html#spin_section"><img src="assets/img/b_spin.png" alt=""></a>
+      </div>
+      
+      <div id="clear"></div>
+    </div>
+    <!-- footer -->
+    <footer>
+      
+      <div id="clear"></div>
+      <ul class="logo ">
+        <li><a href=""><img src="assets/img/logo_02.jpg" alt=""></a></li>
+        <li><a href="https://www.facebook.com/iwalker15"><img src="assets/img/logo_03.jpg" alt=""></a></li>
+        <li><a href=""><img src="assets/img/logo_04.jpg" alt=""></a></li>
+        <li><a href="http://www.setn.com/"><img src="assets/img/logo_05.jpg" alt=""></a></li>
+      </ul>
+      <ul class="logo fund_logo">
+        <li><a href=""><img src="assets/img/logo_07.jpg" alt=""></a></li>
+        <li><a href=""><img src="assets/img/logo_09.jpg" alt=""></a></li>
+        <li><a href=""><img src="assets/img/logo_10.jpg" alt=""></a></li>
+        <li><a href="http://www.rakuten.com.tw/"><img src="assets/img/logo_12.jpg" alt=""></a></li>
+        <li><a href=""><img src="assets/img/logo_14.jpg" alt=""></a></li>
+        <li><a href="http://www.lolinya.com.tw/dispPageBox/LLYHp.aspx?ddsPageID=CHHOM"><img src="assets/img/logo_15.jpg" alt=""></a></li>
+      </ul>
+      <div id="clear"></div>
+      <p class="copyright">copyright© 2016 Sanlih E-Television All Rights Reserved 版權所有 盜用必究 台北市內湖區舊宗路一段159號 02-8792-8888</p>
+    </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>夏祭花火 璀璨京阪奈</title>
+    <!--ios調整-->
+    <meta name="apple-mobile-web-app-capable" content="yes"><!--使網頁全屏幕-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--解決電話與地址預設亂黑影開槍-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1">
+    <meta name="keywords" content="日本,京都,大阪,奈良,花火節,愛玩客">
+    <meta name="description" content="關西漫遊活 轉盤送好禮">
+    <meta property="og:title" content="夏祭花火 璀璨京阪奈">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="關西漫遊活 轉盤送好禮">
+    <meta property="og:site_name" content="夏祭花火 璀璨京阪奈">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/contents.css">
+    <style>
+    @media screen and (min-width:1025px){
+    #mobile{ display: none;}
+    }
+    @media screen and (max-width:1024px){
+    body{ overflow-y:initial }
+    #wrap,.wrap_banner{ display: none;}
+    }
+    </style>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/jQueryRotate.js"></script>
+    <script src="assets/js/jquery.blockUI.js"></script>
+    <script src="assets/js/jquery.mousewheel.min.js"></script>
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/util.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+  </head>
+  <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div id="menu_icon"> <span class="AAA"></span> <span class="BBB"></span> <span class="CCC"></span> </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="article.html">京阪奈特刊</a></li>
+        <li><a href="video.html">影音花絮</a></li>
+        <li><a href="event.html">活動辦法</a></li>
+        <li class="share">
+          <a href="#"><img src="assets/img/fb.png" alt="facebook_share"></a>
+          <a href="#"><img src="assets/img/weibo.png" alt="facebook_share"></a>
+          <a href="#"><img src="assets/img/line.png" alt="facebook_share"></a>
+        </li>
+      </ul>
+    </div>
+    <div id="wrap">
+      
+      <div id="cover"></div>
+      
+      <div id="ff_bg"></div>
+      <div id="stage">
+        <div id="content">
+          <!-- top -->
+          <section class="scene scene-top">
+            
+            
+            <div class="objects">
+              <img src="assets/img/top/obj00.png" class="obj00">
+              <img src="assets/img/top/obj01.png" class="obj01">
+              <img src="assets/img/top/obj02.png" class="obj02">
+              <img src="assets/img/top/obj03.png" class="obj03">
+              <img src="assets/img/top/obj05.png" class="obj05">
+              <img src="assets/img/top/obj04.png" class="obj04">
+              <img src="assets/img/top/fru00.png" class="fru00">
+              <img src="assets/img/top/fru01.png" class="fru01">
+            </div>
+            <div class="title">
+              <div class="logo">
+                <p><img src="assets/img/top/logo.png"></p>
+                <h1><img src="assets/img/top/ribbon.png" ></h1>
+              </div>
+              
+            </div>
+          </section>
+          <!-- 01 -->
+          <div class="bg bg01">
+            <img src="assets/img/bg/obj_1_0.png">
+          </div>
+          <section class="scene scene01">
+            <div class="objects">
+              <img src="assets/img/scene01/obj00.png">
+              <img src="assets/img/scene01/obj01.png">
+            </div>
+            <img src="assets/img/scene01/title.png" class="title">
+            <img src="assets/img/scene01/name00.png" class="start" rotary="webRotary">
+            <img src="assets/img/scene01/item00.png" class="items item0">
+            <img src="assets/img/scene01/item01.png" id="webRotary" class="items item1">
+            <img src="assets/img/scene01/item02.png" class="items item2">
+          </section>
+          <!-- 02 -->
+          <div class="bg bg02">
+            <img src="assets/img/bg/obj_2_0.png">
+          </div>
+          <section class="scene scene02">
+            <div class="objects">
+              <img src="assets/img/scene02/obj01.png">
+              <img src="assets/img/scene02/obj00.png">
+            </div>
+            <div class="title">
+              <h2><img src="assets/img/scene02/title.png"></h2>
+            </div>
+            <a href="article.html" class="start"><img src="assets/img/scene02/name00.png"></a>
+            <img src="assets/img/scene02/name01.png" class="deer">
+          </section>
+          <!-- 03 -->
+          <div class="bg bg03">
+            <img src="assets/img/bg/obj_3_0.png">
+          </div>
+          <section class="scene scene03">
+            <div class="objects">
+              <img src="assets/img/scene03/obj00.png">
+              <img src="assets/img/scene03/obj01.png">
+            </div>
+            <div class="title">
+              <h2><img src="assets/img/scene03/title.png"></h2>
+            </div>
+            
+            <img src="assets/img/scene03/item00.png" class="deer">
+            <a href="video.html" class="play"><img src="assets/img/scene03/name00.png"></a>
+          </section>
+          <!-- 04 -->
+          <section class="home_footer">
+            <img src="assets/img/wait4u.png" class="wait4u">
+            <div class="footer">
+              <div id="clear"></div>
+              <ul class="logo ">
+                <li><a href=""><img src="assets/img/logo_02.jpg" alt=""></a></li>
+                <li><a href="https://www.facebook.com/iwalker15"><img src="assets/img/logo_03.jpg" alt=""></a></li>
+                <li><a href=""><img src="assets/img/logo_04.jpg" alt=""></a></li>
+                <li><a href="http://www.setn.com/"><img src="assets/img/logo_05.jpg" alt=""></a></li>
+              </ul>
+              <ul class="logo fund_logo">
+                <li><a href=""><img src="assets/img/logo_07.jpg" alt=""></a></li>
+                <li><a href=""><img src="assets/img/logo_09.jpg" alt=""></a></li>
+                <li><a href=""><img src="assets/img/logo_10.jpg" alt=""></a></li>
+                <li><a href="http://www.rakuten.com.tw/"><img src="assets/img/logo_12.jpg" alt=""></a></li>
+                <li><a href=""><img src="assets/img/logo_14.jpg" alt=""></a></li>
+                <li><a href="http://www.lolinya.com.tw/dispPageBox/LLYHp.aspx?ddsPageID=CHHOM"><img src="assets/img/logo_15.jpg" alt=""></a></li>
+              </ul>
+              <div id="clear"></div>
+              
+            </div>
+            <p class="copyright">copyright© 2016 Sanlih E-Television All Rights Reserved 版權所有 盜用必究 台北市內湖區舊宗路一段159號 02-8792-8888</p>
+          </section>
+        </div>
+
+      </div>
+    </div>
+    <div class="wrap_banner" >
+        <a href=""><img src="assets/img/b300x600.png" alt=""></a>
+        <a href=""><img src="assets/img/b300x250.png" alt=""></a>
+        <a href=""><img src="assets/img/b300x100.png" alt=""></a>
+      </div> 
+
+    <div id="mobile">
+      <!--TOP-->
+      <section>
+        <div class="section_m_wrap">
+          <img src="assets/img/top/logo.png" class="logo">
+          <img src="assets/img/top/ribbon.png" class="ribbon" >
+          <img src="assets/img/top/obj00.png" class="obj00">
+          <img src="assets/img/top/obj04.png" class="obj04">
+          <img src="assets/img/top/obj03.png" class="obj03">
+          <img src="assets/img/top/obj02.png" class="obj02">
+          <img src="assets/img/top/obj05.png" class="obj06">
+          <img src="assets/img/top/fru01.png" class="fru01">
+        </div>
+        
+      </section>
+      
+      <!--1-->
+      <section>
+        <div class="section_m_wrap">
+          <img src="assets/img/scene01/spin_title.png" class="title1">
+          <img src="assets/img/scene01/spin_box.png" class="spinbox">
+          <div class="spin">
+            <img src="assets/img/scene01/item01.png" id="mobileRotary" class="items item1">
+            <img src="assets/img/scene01/item02.png" class="items item2">
+          </div>
+          <img src="assets/img/scene01/name00.png" class="start" rotary="mobileRotary">
+          <img src="assets/img/scene01/item00.png" class="items item0">
+          <img src="assets/img/common/firework.png" class="obj3">
+          <img src="assets/img/scene03/obj00.png" class="obj4">
+          <img src="assets/img/scene01/obj01.png" class="obj2">
+        </div>
+      </section>
+      
+      <!--2-->
+      <section>
+        <div class="section_m_wrap">
+          <img src="assets/img/scene02/title.png" class="title2">
+          <a href="article.html" class="more"><img src="assets/img/scene02/name00.png"></a>
+          <img src="assets/img/scene01/house.png" class="house">
+          <img src="assets/img/scene01/one_deer.png" class="deer">
+          <img src="assets/img/common/firework.png" class="obj3">
+          <img src="assets/img/scene02/obj00.png" class="obj4">
+          <img src="assets/img/scene02/obj01.png" class="obj5">
+          <img src="assets/img/scene03/deer3.png" class="deer3">
+          <img src="assets/img/scene02/item00.png" class="item3">
+          <img src="assets/img/scene02/item01.png" class="item4">
+        </div>
+      </section>
+      <!--3-->
+      <section>
+        <div class="section_m_wrap">
+          <img src="assets/img/scene03/title.png" class="title3">
+          <a href="video.html" class="play"><img src="assets/img/scene03/name00.png"></a>
+          <img src="assets/img/scene03/idcard.png" class="idcard">
+          <img src="assets/img/scene03/item00.png" class="deer4">
+          <img src="assets/img/scene03/item01.png" class="item5">
+          <img src="assets/img/scene03/item02.png" class="item6">
+          <img src="assets/img/scene03/item03.png" class="item7">
+          <img src="assets/img/common/firework.png" class="obj3">
+          <img src="assets/img/scene03/obj00.png" class="obj4">
+        </div>
+      </section>
+    </div>
+    <footer class="home">
+      <div class="banner">
+        <a href=""><img src="assets/img/b300x600.png" alt=""></a>
+        <a href=""><img src="assets/img/b300x250.png" alt=""></a>
+        <a href=""><img src="assets/img/b300x100.png" alt=""></a>
+      </div>  
+      <div id="clear"></div>
+      <ul class="logo ">
+        <li><a href=""><img src="assets/img/logo_02.jpg" alt=""></a></li>
+        <li><a href="https://www.facebook.com/iwalker15"><img src="assets/img/logo_03.jpg" alt=""></a></li>
+        <li><a href=""><img src="assets/img/logo_04.jpg" alt=""></a></li>
+        <li><a href="http://www.setn.com/"><img src="assets/img/logo_05.jpg" alt=""></a></li>
+      </ul>
+      <ul class="logo fund_logo">
+        <li><a href=""><img src="assets/img/logo_07.jpg" alt=""></a></li>
+        <li><a href=""><img src="assets/img/logo_09.jpg" alt=""></a></li>
+        <li><a href=""><img src="assets/img/logo_10.jpg" alt=""></a></li>
+        <li><a href="http://www.rakuten.com.tw/"><img src="assets/img/logo_12.jpg" alt=""></a></li>
+        <li><a href=""><img src="assets/img/logo_14.jpg" alt=""></a></li>
+        <li><a href="http://www.lolinya.com.tw/dispPageBox/LLYHp.aspx?ddsPageID=CHHOM"><img src="assets/img/logo_15.jpg" alt=""></a></li>
+      </ul>
+      <div id="clear"></div>
+      <p class="copyright">copyright© 2016 Sanlih E-Television All Rights Reserved 版權所有 盜用必究 台北市內湖區舊宗路一段159號 02-8792-8888</p>
+    </footer>
+   
+    <!-- 轉盤彈出視窗 -->
+
+    <div id="rotaryPrize1" class="rotaryPrizeDiv">
+      <div class="close"></div>
+      <div class="textContent">
+        <div class="title">你是個樂天的旅行家，出國對你來說沒負擔，<br>一切跟著感覺走，反正出外靠朋友就對了!</div>
+        <div class="prize_img"><img src="./assets/img/lightbox/img1.png" alt=""></div>
+        <div class="text"><p>
+          <span class="topic">甜蜜季節淨白閃耀的美齒</span>
+          <span style="font-size:20px; line-height:1.4em; margin-bottom:10px">Ora2全新亮白因子 為你打造淨白閃耀的口妝美學</span><br>Ora2一直以讓女性更有魅力的口妝美（Oral Beauty Care Brand）為理念，為了讓愛美的妳擁有逾越使用感，全新升級的極致淨白配方，能溶解齒垢，還特別以柔和質感的極細緻亮白成分刷亮齒面，達到不傷琺瑯質讓牙齒柔滑亮白的效用，讓妳無時無刻都能展現自信迷人的笑容。</p>
+          <p>
+          促銷活動：屈臣氏 7/7 ~ 8/3, 康是美 7/6 ~ 8/2 ，凡購買Ora2商品送25g 限量的Sweet淨白無瑕牙膏乙支（數量有限，送完為止）
+        </p>
+        <p>Ora2官網：<a href="http://www.ora2.com.tw" target="_blank">www.ora2.com.tw</a><br>
+         Ora2粉絲團：<a href="https://business.facebook.com/Ora2Taiwan/" target="_blank">business.facebook.com/Ora2Taiwan/</a></p></div>
+       
+
+      <a href="" class="prize_logo"><img src="./assets/img/logo_12.jpg" alt=""></a>  
+      <a href="" class="prize_share">我要分享</a>
+        <div id="clear"></div>
+      </div>
+    </div>
+    <div id="rotaryPrize2" class="rotaryPrizeDiv">
+      <div class="close"></div>
+      <div class="textContent">
+        <div class="title">你是個文青旅行家，喜歡具有歷史意義的古蹟行程，從古老的建築物細細品味前人的智慧。</div>
+        <div class="prize_img"><img src="./assets/img/lightbox/img2.png" alt=""></div>
+        <div class="text"><p><span class="topic"> VIVIBEAUTY 水肌晶面膜</span>以“二動能水感科技”特殊製程，並內含世界知名成份<br>VEGELES® AHA複合的α-氫氧酸，<br>AHA的水合作用具超強保濕效果，<br>日本海域海洋深層水能使有效成份快速滲入肌膚，<br>調理內外水份滲透壓力，提昇水份及養份的容量。<br>
+        主要成份：複合阿法氫氧酸、天然保溼因子、抗敏因子、Algae extract、紅藻、油甘子萃取、乳酸、玻尿酸、尿囊素
+        <p>官網：<a href="http://www.vivispa.com.tw" target="_blank">www.vivispa.com.tw</a></p>
+        </p>
+        </div>
+        <a href="" class="prize_logo"><img src="./assets/img/logo_09.jpg" alt=""></a>
+        <a href="" class="prize_share">我要分享</a> 
+        <div id="clear"></div>
+      </div>
+    </div>
+    <div id="rotaryPrize3" class="rotaryPrizeDiv">
+      <div class="close"></div>
+      <div class="textContent">
+        <div class="title">你是冒險型的旅行家，喜歡發現秘境，常常可以一個人完成許多事，<br>很有主見，只有自己規劃的行程最能自我滿足。</div>
+        <div class="prize_img"><img src="./assets/img/lightbox/img3.png" alt=""></div>
+        <div class="text"><p><span class="topic">Angelia & Pets 夏日就是要跑音樂祭！</span>
+          今年夏天最不能少的就是最in的”音樂祭”風潮！
+        『Kido後背包』2016春夏系列，以今年最熱門的草地音樂節為靈感，
+        把設計拉回令人懷念的70年代，將迷幻元素混搭渲染圖騰，<br>打造出獨一無二的特殊視覺，不只適合春夏的各種造型，<br>也能輕易展現夏日街頭的音樂祭個性風，
+        走到哪都能輕鬆吸引眾人目光！</p>
+        <p>Angelia & Pets販售點：<a href="http://www.angeliapets.com/store.html" target="_blank">www.angeliapets.com/store.html</a><br>
+        網路販售：<a href="http://www.itpmall.com/Angelia%20Pets/" target="_blank">www.itpmall.com/Angelia%20Pets/</a>
+        </p></div>
+        <a href="" class="prize_logo"><img src="./assets/img/logo_15.jpg" alt=""></a>
+        <a href="" class="prize_share">我要分享</a> 
+        <div id="clear"></div>
+      </div>
+    </div>
+    <div id="rotaryPrize4" class="rotaryPrizeDiv">
+      <div class="close"></div>
+      <div class="textContent">
+        <div class="title">你是慢熟型的旅行家，安排的行程最好以觀光資源豐富的大都市為主，可以請旅行社安排行程，事先有充份規劃和了解，比較可以隨機應變。</div>
+        <div class="prize_img"><img src="./assets/img/lightbox/img4.png" alt=""></div>
+        <div class="text"><span class="topic">薰衣草香氛小抱枕 5個</span><p>[ 獨霸全台 ]風采旅遊致力於日本旅遊30年 北海道三大保證:<br>1.全新自有遊覽車隊(絕非免稅店舊遊覽車)<br>2.登別、函館五星溫泉飯店(保證入住)<br>3.公司自有導遊群，提升服務品質(絕非免稅店導遊)夏季的北海道正是薰衣草盛開時期，欣賞絕美的花海景色絕對讓您物超所值!!我們特地贈送薰衣草香氛小抱枕，讓您隨時隨地感受薰衣草的無憂香氣！</p><p>北海道夏季的薰衣草花海總是讓人心嚮往之，薰衣草的無憂香氣，可讓心情放鬆猶如置身於一片紫色花海中，讓你擁有享受大自然中的美好事物的特權。<br>
+        風采旅行社：<a href="http://www.pv-travel.com.tw/" target="_blank">www.pv-travel.com.tw/</a></p>
+      </div>
+      <a href="" class="prize_logo"><img src="./assets/img/logo_10.jpg" alt=""></a>
+      <a href="" class="prize_share">我要分享</a>
+      <div id="clear"></div>
+    </div>
+  </div>
+  <div id="rotaryPrize5" class="rotaryPrizeDiv">
+    <div class="close"></div>
+    <div class="textContent">
+      <div class="title">你是精明型的旅行家，具有高度判斷力和領導力，<br>常常一不小心就變成全團的實質導遊，大家都想跟著你走。</div>
+      <div class="prize_img"><img src="./assets/img/lightbox/img5.png" alt=""></div>
+      <div class="text"><p><span class="topic">ANNADOLLY<br>偶像劇女主角包款御用品牌</span>從設計、選皮、打板、色彩選用到商品產出，<br>ANNADOLLY皆以精品級的規格嚴謹把關。<br>
+      【後菜鳥的燦爛時代 - 雨棠包】將實用性融入於都會俐落的外型中，以簡約設計、多way背法、大容量(可置入A4文件) <br>  搭配冷靜的白、藍色系，襯托出女性上班族嚮往的優雅與專業形象。
+      </p>
+      <p>購買連結：<a href="http://goo.gl/HyDrma"  target="_blank">goo.gl/HyDrma</a> <br>
+        品牌官網：<a href="http://www.annadolly.com/"  target="_blank">www.annadolly.com/</a></p> 
+      </div>
+      <a href="" class="prize_logo"><img src="./assets/img/logo_16.jpg" alt=""></a>
+      <a href="" class="prize_share">我要分享</a> 
+      <div id="clear"></div>
+    </div>
+  </div>
+  
+  <script>
+  $('#menu_icon').click(function() {
+    $(this).toggleClass("active");
+    $(".menu").toggleClass("active");
+  });
+    
+  /* 轉盤旋轉：按下 start 開始旋轉 3 秒後停留在該角度，並跳出對應獎項視窗 */
+  $(".start").click( function() {
+    // 旋轉角度介於 20 圈至 30 圈
+    var randomDeg = Math.floor((Math.random() * 3600) + 7200);
+    // 判斷點擊來自網頁版或手機版
+    var rotary = $(this).attr("rotary");
+    // 對應輪盤旋轉 (網頁版或手機版)
+    $("#" + rotary).rotate({
+      angle: 0,
+      animateTo: randomDeg,
+      duration: 3000,
+      callback: function(){
+      popUpPrize(randomDeg, rotary);
+      },
+      easing: $.easing.easeInOutExpo
+    });
+  });
+  
+  // 彈出對應獎項視窗
+  function popUpPrize(degree, rotaryDevice) {
+    var rotaryDeg = ((degree + 36) % 360); // 旋轉角度
+    var prizeOrder = Math.floor(rotaryDeg / 72) + 1; // 獎項順序 (輪盤五等份)
+    var prizeName = ''; // 獎項名稱
+    var isMobile = (rotaryDevice.indexOf('mobile') != -1);
+    var webCss = {cursor:'default', width:'1000px', height:'580px', top:'50%', left:'50%', margin:'-290px 0 0 -500px', border:'0px', backgroundColor:'rgba(0,0,0,0)' };
+    var mobileCss = {cursor:'default', width:'100%', height:'100vh', top:'0', left:'0%', margin:'0', border:'0px', backgroundColor:'rgba(0,0,0,0)' };
+
+    // 彈出視窗
+    $.blockUI({
+      message: $('#rotaryPrize' + prizeOrder),
+      css: (isMobile ? mobileCss : webCss),
+      overlayCSS: {
+        backgroundColor: 'rgba(0,0,0,1)',
+        opacity: 0.3,
+        cursor: 'default'
+      },
+      onBlock: function(){
+        // 點擊背景關閉彈出視窗
+        $(".blockOverlay").on("click touchstart", $.unblockUI);
+        $('.rotaryPrizeDiv > .close').each(function(){
+          $(this).on("click touchstart", $.unblockUI);
+        });
+      }
+    });
+  }
+  </script>
+</body>
+</html>
