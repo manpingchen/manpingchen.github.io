@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton|Tajawal');
-*{ padding: 0; margin: 0; border: 0; box-sizing: border-box; text-decoration: none; list-style: none;  }
+*{ padding: 0; margin: 0; border: 0; box-sizing: border-box; text-decoration: none; list-style: none; font-family: Arial, Helvetica, sans-serif; }
 html,body{ min-height: 100%; }
 body{ position: relative; min-height: 100vh; overflow-x:hidden;  }
 #background{ transition: 1.4s all; }
 
 a{color: #0F0508; }
-h1{ font-family: 'Monoton', cursive;font-size: 36px; text-align: center; letter-spacing: -0.01em; line-height: 1em; font-weight: 400;}
+h1{ /*font-family: 'Monoton', cursive;*/font-size: 36px; text-align: center; letter-spacing: -0.01em; line-height: 1em; font-weight: 400;}
 h2{ font-size: 28px; text-align: center; letter-spacing: 0.1em; line-height: 1em; padding: 60px 0 50px; font-weight: 400;}
 h3{ font-size: 22px; text-align: center; letter-spacing: 0.08em; line-height: 1em; padding: 60px 0 50px; font-weight: 400;}
 h4{ font-size: 18px; text-align: center; letter-spacing: 0.08em; line-height: 1em;  font-weight: 400;}
@@ -38,13 +38,13 @@ header.pc nav ul.menu li a:after{ content: ""; display: block; border-bottom: 2p
 header.pc nav ul.menu li a:hover:after{ opacity: 1; top:2px; }
 
 .home header.mobile,.home header.pad{ background: none }
-.home_concept{background: linear-gradient(#F16967,#fefff1);/*background: url('../images/bg.png') fixed no-repeat center center; background-size: cover;*/ z-index: 1; width: 100vw; height: 100vh;  overflow: hidden; position: relative;  }
+.home_concept{background:linear-gradient(#F16967,#f9d0a6);/*background: url('../images/bg.png') fixed no-repeat center center; background-size: cover;*/ z-index: 1; width: 100vw; height: 100vh;  overflow: hidden; position: relative;  }
 .home_concept img{ position: absolute; top: 20vh; width:40vw; left: 10vh  }
-.home_concept h1{ z-index: 10000; position: absolute; font-size: 100px; text-align: left; top: 20vh;left: 5vw; color: #fff}
+.home_concept h1{    text-transform: uppercase; font-weight: 900; z-index: 10000; position: absolute; font-size: 120px; text-align: left; top: 12vh;left: 5vw; color: #fff}
 .home_concept h2{ position: absolute; font-size: 12px; z-index: 9; text-align: left; bottom: 10vh;left: 5vw; color: #fff}
 .home_concept .shape{display: block;     z-index: 1;position: absolute;}
 .home_concept h4{ text-align: justify; text-align-last: right; text-align: right; position: absolute; font-size: 14px; top: 23vh;right: 5vw; line-height: 1.4em;  color: #fff; width: 60px; text-transform: uppercase;}
-.home_summary {width: 30vw; right: 5vw; top:50vh; position: absolute; z-index: 9;  color: #fff; font-size: 12px; }
+.home_summary {width: 35vw; right:5vw; top:55vh; position: absolute; z-index: 9;  color: #fff; font-size: 15px; }
 .home_summary a{ display: inline-block; font-style: italic; color: #fff; text-decoration: underline; }
 
 /* items */
@@ -261,7 +261,7 @@ p.thank span{ display: block; line-height: 2em; font-weight: 100; }
 	nav ul.menu{ height: 30px; margin-right: 10px; }
 	nav ul.menu li a{ font-size: 30px;  line-height: 47px; padding: 15px;}
 
-	.home_summary{ width: 50vw; top: 52vh;}
+	.home_summary{ width: 50vw; top: 52vh; font-size: 13px;}
 	.home_concept h1{ font-size: 80px; }
 	.home_concept h4{ top: 39vh }
 	.item{ top: 20% !important ;width: 100vw !important; left: 0 }
