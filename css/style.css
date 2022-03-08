@@ -743,6 +743,11 @@ footer p {
 .work_page p a {
   text-decoration: underline;
 }
+
+.work_page p i {
+  font-weight: normal !important;
+  color: #aaa;
+}
 @media (min-width: 1680px) {
   #main_film {
     height: 60vh;
