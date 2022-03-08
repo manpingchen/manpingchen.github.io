@@ -182,6 +182,7 @@ header.pc nav ul.menu li a {
   font-size: 14px;
   letter-spacing: 0.044em;
   line-height: 30px;
+  height: 30px;
   padding: 0 5px;
   color: #fff;
 }
@@ -374,6 +375,7 @@ span.star {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 .work_info .work p {
   width: 100%;
