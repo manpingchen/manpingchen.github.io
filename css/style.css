@@ -44,7 +44,6 @@ body {
 }
 a {
   color: #0f0508;
-  text-decoration: underline;
 }
 h1 {
   font-family: Philosopher, sans-serif;
@@ -739,6 +738,10 @@ footer p {
 }
 .work_page footer {
   border-top: 1px solid #ddd;
+}
+
+.work_page p a {
+  text-decoration: underline;
 }
 @media (min-width: 1680px) {
   #main_film {
