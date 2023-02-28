@@ -415,6 +415,8 @@ span.star {
 }
 .testimony > div div blockquote {
   margin-bottom: 15px;
+  letter-spacing: 0.02rem;
+  line-height: 1.7rem;
 }
 .career_detail {
   position: sticky !important;
@@ -671,7 +673,7 @@ footer p {
   margin-bottom: 40px;
 }
 .work_page .caption {
-  font-size: 13px;
+  font-size: 14px;
   color: #000;
   text-align: left;
   width: 50%;
@@ -1170,4 +1172,35 @@ footer p {
     position: sticky;
     top: 0;
   }
+}
+
+.feedback {
+  width: 80%;
+  max-width: 400px;
+  margin: 2rem auto 0;
+}
+
+.feedback h4 {
+  font-family: Philosopher, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  padding: 60px 0 50px;
+  font-weight: 400;
+}
+
+img.small {
+  max-width: 400px !important;
+  margin: 0 auto 2rem !important;
+}
+
+.work-images img{
+  max-width: 600px !important;
+  margin-bottom: 2rem !important;
+}
+
+.mb-4{
+  margin-bottom: 4rem !important;
+  display: block;
 }
