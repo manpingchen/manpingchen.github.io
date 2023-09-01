@@ -1669,6 +1669,7 @@ footer .wrap-logo {
   gap: 1rem;
   padding: 2.5rem 1.5rem;
   background-color: rgba(255, 255, 255, 0.1);
+  flex-direction: column;
 }
 
 footer .wrap-logo dl.list-logo {
@@ -3170,12 +3171,13 @@ a.btn-default {
 @media (max-width: 450px) {
   main .inner {
     padding: 70px 0 30px;
-    justify-content: flex-end;
+    justify-content: center;
   }
   main .inner .title {
-    padding-left: 1.5rem;
-    margin-top: 0;
+    margin-top: 3rem;
     margin-bottom: 2rem;
+    justify-content: center;
+    padding-left: 3rem;
   }
 
   main svg {
@@ -3489,7 +3491,8 @@ a.btn-default {
 }
 
 .container section .sec-inner.giftBK-2 {
-  background-image: url(../images/bk-2.jpg);
+  background: url(../images/bk-2.jpg) no-repeat;
+  background-size: cover;
 }
 
 .container section#gift .title {
