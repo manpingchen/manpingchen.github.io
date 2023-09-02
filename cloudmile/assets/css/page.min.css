@@ -1674,13 +1674,20 @@ footer .wrap-logo {
 
 footer .wrap-logo dl.list-logo {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: nowrap;
   width: 100%;
   max-width: 860px;
   margin: auto;
   gap: 2rem;
+}
+
+footer .wrap-logo .list-logo_img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem 4rem;
 }
 
 footer .wrap-logo dl.list-logo + dl {
@@ -1692,18 +1699,18 @@ footer .wrap-logo dl.list-logo dt {
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
   font-weight: bold;
+  flex-shrink: 0;
 }
 
 footer .wrap-logo dl.list-logo dd {
   height: 30px;
+  display: flex;
+  align-items: center;
 }
 
 footer .wrap-logo dl.list-logo dd img {
   height: 100%;
-}
-
-footer .wrap-logo dl.list-logo dd + dd {
-  margin-left: 2em;
+  filter: grayscale(1) brightness(1000);
 }
 
 /* openNav */
@@ -3166,6 +3173,10 @@ a.btn-default {
   .info .text {
     font-size: 16px;
   }
+
+  footer .wrap-logo .list-logo_img{
+    justify-content: center;
+  }
 }
 
 @media (max-width: 450px) {
@@ -3387,6 +3398,12 @@ a.btn-default {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+  }
+
+  footer .wrap-logo .list-logo_img{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   footer .wrap-logo dl.list-logo dt {
