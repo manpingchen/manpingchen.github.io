@@ -3245,13 +3245,17 @@ a.btn-default {
     padding: 0 0 0 30px;
   }
 
-  .wrap-instructor .sec-body:before,
-  .wrap-instructor .sec-body:after {
+  .wrap-instructor .sec-body:before {
     width: 100%;
+  }
+
+  .wrap-instructor .sec-body:after {
+    width: 200%;
   }
 
   .wrap-instructor .sec-body::after {
     background-size: cover;
+    background-position: 210% top;
   }
 
   .wrap-instructor .swiper-thumbsSlider .swiper-wrapper {
@@ -3260,16 +3264,18 @@ a.btn-default {
 
   .wrap-instructor .swiper-slide {
     flex-direction: column;
+    gap: 6rem;
+    justify-content: flex-start;
   }
 
   .wrap-instructor .swiper-slide .img {
     order: 1 !important;
     width: 50%;
+    margin-top: 6rem;
   }
 
   .wrap-instructor .swiper-slide .info {
     order: 2 !important;
-    margin-top: 1em;
     padding: 0 2rem;
     width: 100%;
   }
