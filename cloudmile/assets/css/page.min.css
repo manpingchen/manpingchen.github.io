@@ -1687,7 +1687,7 @@ footer .wrap-logo .list-logo_img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2rem 4rem;
+  gap: 2rem 3rem;
 }
 
 footer .wrap-logo dl.list-logo + dl {
@@ -1703,13 +1703,13 @@ footer .wrap-logo dl.list-logo dt {
 }
 
 footer .wrap-logo dl.list-logo dd {
-  height: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 footer .wrap-logo dl.list-logo dd img {
-  height: 100%;
+  height: 40px;
   filter: grayscale(1) brightness(1000);
 }
 
@@ -2070,9 +2070,11 @@ main .field-group {
 
 .wrap-instructor .sec-body:after {
   z-index: 0;
-  background-image: url(asset/sym-pattern.svg);
+  background-image: url(asset/sym-pattern-top-2.png);
   background-repeat: no-repeat;
   mix-blend-mode: screen;
+  background-position: right 10%;
+  opacity: 0.5;
 }
 
 .wrap-instructor .swiper-slide {
@@ -2266,7 +2268,6 @@ main .field-group {
 }
 
 .instructor:nth-child(2) .sec-body:after {
-  background-position: -100px center;
 }
 
 .instructor:nth-child(3) .sec-body:before {
@@ -2868,7 +2869,7 @@ a.btn-default {
   }
 
   .wrap-instructor .sec-body:after {
-    background-size: contain;
+    background-size: cover;
   }
 
   .wrap-instructor .swiper-slide {
@@ -3174,7 +3175,7 @@ a.btn-default {
     font-size: 16px;
   }
 
-  footer .wrap-logo .list-logo_img{
+  footer .wrap-logo .list-logo_img {
     justify-content: center;
   }
 }
@@ -3261,12 +3262,12 @@ a.btn-default {
   }
 
   .wrap-instructor .sec-body:after {
-    width: 200%;
+    width: 100%;
   }
 
   .wrap-instructor .sec-body::after {
     background-size: cover;
-    background-position: 210% top;
+    background-position: 100% top;
   }
 
   .wrap-instructor .swiper-thumbsSlider .swiper-wrapper {
@@ -3400,7 +3401,7 @@ a.btn-default {
     gap: 1rem;
   }
 
-  footer .wrap-logo .list-logo_img{
+  footer .wrap-logo .list-logo_img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
