@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-sitemap: https://manpingchen.com/sitemap.xml
+sitemap: https://manpingchen.github.io//sitemap.xml

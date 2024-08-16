@@ -119,7 +119,7 @@ header.pc {
 a#main_logo {
   font-family: Philosopher, sans-serif;
   font-size: 50px;
-  left: 10%;
+  left: 5%;
   top: 20%;
   line-height: 80px;
   position: absolute;
@@ -197,10 +197,10 @@ header.pc nav ul.menu li:hover {
   line-height: 32px;
   display: block;
   font-size: 16px;
-  width: 525px;
+  width: 750px;
   top: 34vh;
   position: absolute;
-  left: 10%;
+  left: 5%;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
 }
 #main_film .line-1 a {
@@ -357,11 +357,11 @@ span.star {
   flex-wrap: wrap;
 }
 .work_info .work li {
-  width: 50%;
+  width: calc(100% / 3);
   position: relative;
   flex-direction: column;
   transition: 0.3s all;
-  margin: 15vh 0;
+  margin: 10vh 0;
   display: flex;
   align-items: center;
   justify-content: top;
@@ -410,6 +410,13 @@ span.star {
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+  .testimony > div {
+    flex-direction: column;
+  }
+}
+
 .testimony > div div {
   padding: 5%;
 }
@@ -1195,12 +1202,96 @@ img.small {
   margin: 0 auto 2rem !important;
 }
 
-.work-images img{
+.work-images img {
   max-width: 800px !important;
   margin-bottom: 2rem !important;
 }
 
-.mb-4{
+.mb-4 {
   margin-bottom: 4rem !important;
   display: block;
+}
+
+/* 2024 */
+
+section.my-new-chapter {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 5%;
+  display: flex;
+  gap: 1rem;
+}
+
+section.my-new-chapter h1 {
+  width: calc(100% / 3);
+  text-align: left;
+}
+
+section.my-new-chapter div.new-item {
+  flex: 1;
+  word-break: keep-all;
+}
+
+section.my-new-chapter div.new-item .img-wrap {
+  width: 100px;
+  height: 100px;
+  background: no-repeat center;
+  background-size: cover;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+section.my-new-chapter .new-item h3 {
+  line-height: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+
+section.my-new-chapter div.new-item h4 {
+  font-size: 0.785rem;
+  padding: 0.5rem 0;
+}
+
+section.my-new-chapter div.new-item p {
+  line-height: 1.3rem;
+  font-size: 0.785rem;
+}
+
+section.my-new-chapter div.new-item a.link {
+  font-size: 0.785rem;
+  padding: 0.5rem;
+  display: inline-block;
+  border: 1px solid #eee;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  section.my-new-chapter {
+    flex-direction: column;
+  }
+  section.my-new-chapter h1 {
+    width: 100%;
+    text-align: center;
+  }
+  section.my-new-chapter .new-item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  section.my-new-chapter .new-item .img-wrap {
+    margin: 0 auto 2rem;
+  }
+
+  section.my-new-chapter .new-item h3 {
+    text-align: center;
+  }
+
+  section.my-new-chapter .new-item p {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  section.my-new-chapter div.new-item h4 {
+    padding-bottom: 0;
+  }
 }
