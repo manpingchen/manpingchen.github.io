@@ -172,6 +172,9 @@ header.pc nav ul.menu {
 header.pc nav ul.menu li {
   transform: rotateX(0);
 }
+header.pc nav ul.menu li.mail {
+  display: none;
+}
 header.pc nav ul.menu li.mail a {
   text-align: center;
   width: 180px;
