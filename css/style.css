@@ -173,7 +173,7 @@ header.pc nav ul.menu li {
   transform: rotateX(0);
 }
 header.pc nav ul.menu li.mail {
-  display: none;
+  display: none !important;
 }
 header.pc nav ul.menu li.mail a {
   text-align: center;
